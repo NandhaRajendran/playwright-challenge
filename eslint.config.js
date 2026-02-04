@@ -10,11 +10,12 @@ export default [{
         '@stylistic/js': stylisticJs
     },
     ignores: [
-        "test/examples/*.js",
-        "test/performance/examples/*.js",
-        "helper/database/QAAutomationDatabaseModule.js",
-        "helper/database/QAAutomationDatabaseModule.js.map",
-        "setup/modifyUsers.mjs"
+        'node_modules/',
+        'data/',
+        'test-results/',
+        'playwright-report/',
+        'blob-report/',
+        'reports/',
     ]},
 { languageOptions: { globals: {
     ...globals.browser
