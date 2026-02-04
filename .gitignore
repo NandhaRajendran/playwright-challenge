@@ -1,0 +1,27 @@
+
+# General ignores
+.DS_Store
+.env
+.env.local
+.env.*.local
+npm-debug.log*
+.vscode/
+
+# Node modules
+node_modules/
+package-lock.json
+
+# Test results
+/test-results/
+/playwright-report/
+/blob-report/
+/reports/
+
+# Playwright test artifacts
+/playwright/artifacts/
+/playwright/.cache/
+/playwright/.auth/
+
+# Data - these are created at env Setup
+data/endpointData.json
+data/userData.json
