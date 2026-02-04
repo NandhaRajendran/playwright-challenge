@@ -60,7 +60,7 @@ test.describe( 'Loan application - Student Tests @Test @Regression', () => {
     // TODO:: randomise boundary age from config or data file
     const boundaryAges = [100, 10];
     for ( const age of boundaryAges ) {
-        test( `Negative: age ${age} should not receive the offer test`, async() => {
+        test( `Negative: Student age ${age} not applicable for offer test`, async() => {
             logger.info( `Starting boundary test for age ${age}` );
 
             // Fill application forms
@@ -90,7 +90,7 @@ test.describe( 'Loan application - Student Tests @Test @Regression', () => {
     // Additional test for different salary inputs and some household/kids status combinations
     const incomeValues = [0, 10000, 15000, 14000, 50000];
     for ( const income of incomeValues ) {
-        test( `Student offer test with income ${income} kr`, async() => {
+        test( `Student offer with income ${income} kr test`, async() => {
             logger.info( `Starting test: Student offer with income ${income} kr` );
 
             // Set income and fill application forms

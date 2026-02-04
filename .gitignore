@@ -16,6 +16,7 @@ package-lock.json
 /playwright-report/
 /blob-report/
 /reports/
+results.xml
 
 # Playwright test artifacts
 /playwright/artifacts/
