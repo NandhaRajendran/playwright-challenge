@@ -1,0 +1,13 @@
+[
+    {
+    "email": "",
+    "mobile": "",
+    "socialSecurityNumber": "",
+    "country": "SE",
+    "income": 30000,
+    "employmentType": "Student",
+    "userActionTypes": [
+                "apply-student-loan"
+            ]
+    }
+]

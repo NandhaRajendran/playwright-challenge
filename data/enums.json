@@ -1,0 +1,17 @@
+{
+    "USER": {
+        "FILTERS": {
+            "COUNTRY": "country",
+            "EMPLOYMENTTYPE": "employmentType",
+            "USERACTIONTYPES": "userActionTypes"
+        }
+    },
+    "EMPLOYMENT_STATUSES": {
+        "EMPLOYED": "Employed",
+        "UNEMPLOYED": "Unemployed",
+        "STUDENT": "Student",
+        "RETIRED": "Retired",
+        "SELF_EMPLOYED": "SelfEmployed",
+        "TEMPORARILY_EMPLOYED": "TemporarilyEmployed"
+    }
+}

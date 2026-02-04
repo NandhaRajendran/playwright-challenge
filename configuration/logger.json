@@ -1,0 +1,12 @@
+
+{
+    "logger": {
+        "minLevel": "debug",
+        "prettyPrint": {
+            "colorize": true,
+            "translateTime": "SYS:isoTime",
+            "ignore": "",
+            "singleLine": true
+        }
+    }
+}
