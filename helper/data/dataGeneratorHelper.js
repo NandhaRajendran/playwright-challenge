@@ -62,12 +62,14 @@ class RandomGeneratorHelper {
         if ( domain && localFromEnv && randomEmailBool === 'false' ) {
             const tag = `${alias}-${Date.now()}`;
             return `${localFromEnv}+${tag}@${domain}`;
-        }
-
-        if ( randomEmailBool === 'true' ) {
+        } else if ( randomEmailBool === 'true' ) {
             return `qaUser_${Date.now()}@test.com`;
+        } else {
+            this.logger.warn( 'TEST_EMAIL_DOMAIN, TEST_EMAIL_LOCAL or RANDOM_EMAIL env variable not set. Generating random email without using TEST_EMAIL_DOMAIN.' );
+            return `random_${Date.now()}@test.com`;
         }
     }
+
     /**
      * Generates a random 10-digit mobile number.
      * @returns {String} A 10-digit mobile number.

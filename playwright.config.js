@@ -15,13 +15,21 @@ export default defineConfig({
         ['junit', { outputFile: 'results.xml' }],
         ['html', { open: 'never' }],
     ],
-    workers: 1,
+    workers: 2,
+    timeout: 60000,
+    expect: {
+        timeout: 10000
+    },
     use: {
-        headless: true,
-        actionTimeout: 30000,
-        navigationTimeout: 60000,
+        headless: false,
+        actionTimeout: 15000,
+        navigationTimeout: 15000,
         screenshot: 'only-on-failure',
-        trace: 'retain-on-failure'
+        trace: 'retain-on-failure',
+        viewport: {
+            height: 720,
+            width: 1280
+        }
     },
     projects: [
         {

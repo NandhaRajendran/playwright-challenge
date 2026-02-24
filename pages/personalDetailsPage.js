@@ -1,5 +1,5 @@
 /**
- * Page Object Model for personal details form.
+ * Page Object Model for personal details page.
  */
 class PersonalDetailsPage {
     /** @param {import('@playwright/test').Page} page */
@@ -37,7 +37,7 @@ class PersonalDetailsPage {
         if ( await this.continueButton.isEnabled({ timeout: 5000 }) && await this.continueButton.count() > 0 ) {
             await this.continueButton.first().click();
         } else {
-            this.logger.error( 'Personal details continue button is not enabled or not found' );
+            throw new Error( 'Personal details continue button is not enabled or not found' );
         }
     }
 }

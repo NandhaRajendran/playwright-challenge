@@ -17,7 +17,7 @@ class Logger {
                 options: {
                     colorize: loggerConfig.logger.prettyPrint && loggerConfig.logger.prettyPrint.colorize || false,
                     translateTime: loggerConfig.logger.prettyPrint && loggerConfig.logger.prettyPrint.translateTime || false,
-                    ignore: loggerConfig.logger.prettyPrint && loggerConfig.logger.prettyPrint.ignore || 'pid,hostname',
+                    ignore: loggerConfig.logger.prettyPrint && loggerConfig.logger.prettyPrint.ignore,
                     messageFormat: '{msg}',
                     singleLine: loggerConfig.logger.prettyPrint && loggerConfig.logger.prettyPrint.singleLine || false,
                 }

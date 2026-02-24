@@ -101,6 +101,9 @@ class FinancePage {
         }
     }
 
+    /**
+     * Returns true if an error alert is visible on the finance page.
+     */
     async isErrorAlertVisible() {
         return await this.errorAlert.isVisible({ timeout: 3000 });
     }

@@ -14,7 +14,7 @@ class OfferPage {
    * Waits for the offer page to load by waiting for the URL to match.
    */
     async waitForOfferPageLoad() {
-        return this.page.waitForURL( /\/credit\/offer$/, { timeout: 10000 });
+        return this.page.waitForURL( /\/credit\/offer$/ );
     }
 
     /**
@@ -22,7 +22,7 @@ class OfferPage {
    */
     async waitForStatusPageLoad() {
         try {
-            await this.page.waitForURL( /\/status$/, { timeout: 10000 });
+            await this.page.waitForURL( /\/status$/ );
         } catch ( error ) {
             throw new Error( `Status page did not load within timeout: ${ error.message}` );
         }
