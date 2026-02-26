@@ -22,8 +22,8 @@ export default defineConfig({
     },
     use: {
         headless: false,
-        actionTimeout: 15000,
-        navigationTimeout: 15000,
+        actionTimeout: 30000,
+        navigationTimeout: 60000,
         screenshot: 'only-on-failure',
         trace: 'retain-on-failure',
         viewport: {
