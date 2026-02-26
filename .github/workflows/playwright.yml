@@ -18,6 +18,14 @@ jobs:
       run: npx playwright install --with-deps
     - name: Run Playwright tests
       run: npm run testSimpleTest
+      env:
+          ENVIRONMENT: ${{ vars.ENVIRONMENT }}
+          LOG_LEVEL: ${{ vars.LOG_LEVEL }}
+          BROWSER: ${{ vars.BROWSER }}
+          BFULL_PARALLEL: ${{ vars.FULL_PARALLEL }}
+          TEST_EMAIL_DOMAIN: ${{ vars.TEST_EMAIL_DOMAIN }}
+          TEST_EMAIL_LOCAL: ${{ vars.TEST_EMAIL_LOCAL }}
+          RANDOM_EMAIL: ${{ vars.RANDOM_EMAIL }}
     - uses: actions/upload-artifact@v4
       if: always()
       with:
