@@ -21,7 +21,7 @@ export default defineConfig({
         timeout: 10000
     },
     use: {
-        headless: false,
+        headless: true,
         actionTimeout: 30000,
         navigationTimeout: 60000,
         screenshot: 'only-on-failure',
