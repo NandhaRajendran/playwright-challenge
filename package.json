@@ -6,7 +6,8 @@
   "scripts": {
     "envSetup": "node setup/envSetup.mjs",
     "test": "npm run envSetup && npx playwright test tests/loanApplication.spec.js",
-    "testRegression": "npm run envSetup && npx playwright test tests/loanApplication.spec.js --grep @regression"
+    "testRegression": "npm run envSetup && npx playwright test tests/loanApplication.spec.js --grep @regression",
+    "testSimpleTest": "npm run envSetup && npx playwright test tests/simpletest.spec.js"
   },
   "author": "Nandhakumar Rajendran",
   "license": "ISC",
